@@ -9,3 +9,5 @@ The independent observations are the rows of the matrix $X$. Each row has a numb
 $$ dist(\vec{v},\vec{w})=\sqrt{(v_1-w_1)^2+(v_2-w_2)^2+...(v_p-w_p)^2}$$
 
 We shall have $n$ different weight vectors because we have $n$ different observations.
+
+**Intuition for Locally Weighted Regression**
