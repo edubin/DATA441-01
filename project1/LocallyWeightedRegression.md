@@ -16,6 +16,40 @@ We shall have $n$ different weight vectors because we have $n$ different observa
 
 This image illistrates how the locally weighted regression is optimized with tau, or bandwith. When tau is too large or too small, the regression is voerfitting or underfitting the training data. (1)
 
+# Kernal Selection
+
+There are many choices of kernels for locally weighted regression. The idea is to have a function with one local maximum that has a compact support.
+- these make more sense when they are plotted
+
+1.   The Exponential Kernel (based on exponential function)
+
+$$ K(x):= e^{-\frac{\|x\|^2}{2}}$$
+
+
+2.   The Tricubic Kernel
+
+$$ K(x):=\begin{cases}
+(1-\|x\|^3)^3 \;\;\;if \;\;\; \|x\|<1 \\
+0 \;\;\; \text{otherwise}
+\end{cases}
+$$
+
+3.   The Epanechnikov Kernel (name of the person who found it, proved to be very efficient)
+
+$$ K(x):=\begin{cases}
+\frac{3}{4}(1-\|x\|^2) \;\;\;if \;\;\; \|x\|<1 \\
+0 \;\;\; \text{otherwise}
+\end{cases}
+$$
+
+3.   The Quartic Kernel
+
+$$ K(x):=\begin{cases}
+\frac{15}{16}(1-\|x\|^2)^2 \;\;\;if \;\;\; \|x\|<1 \\
+0 \;\;\; \text{otherwise}
+\end{cases}
+$$
+
 ## References
 
 1. https://www.geeksforgeeks.org/locally-weighted-linear-regression-using-python/
