@@ -29,7 +29,7 @@ $$ K(x):= e^{-\frac{\|x\|^2}{2}}$$
 2.   The Tricubic Kernel
 
 $$ K(x):=\begin{cases}
-(1-\|x\|^3)^3 \;\;\;if \;\;\; \|x\|<1 \\
+  (1-\|x\|^3)^3   if   \|x\|<1 \\
 0 \;\;\; \text{otherwise}
 \end{cases}
 $$
@@ -37,7 +37,7 @@ $$
 3.   The Epanechnikov Kernel (name of the person who found it, proved to be very efficient)
 
 $$ K(x):=\begin{cases}
-\frac{3}{4}(1-\|x\|^2) \;\;\;if \;\;\; \|x\|<1 \\
+\frac{3}{4}(1-\|x\|^2)  if   \|x\|<1 \\
 0 \;\;\; \text{otherwise}
 \end{cases}
 $$
@@ -45,7 +45,7 @@ $$
 3.   The Quartic Kernel
 
 $$ K(x):=\begin{cases}
-\frac{15}{16}(1-\|x\|^2)^2 \;\;\;if \;\;\; \|x\|<1 \\
+\frac{15}{16}(1-\|x\|^2)^2  if   \|x\|<1 \\
 0 \;\;\; \text{otherwise}
 \end{cases}
 $$
