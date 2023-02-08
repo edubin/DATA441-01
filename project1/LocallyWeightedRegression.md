@@ -10,9 +10,12 @@ $$ dist(\vec{v},\vec{w})=\sqrt{(v_1-w_1)^2+(v_2-w_2)^2+...(v_p-w_p)^2}$$
 
 We shall have $n$ different weight vectors because we have $n$ different observations.
 
+# Visual Intuition for Locally Weighted Regression
+
 ![\label{fig:locregression}](/project1/ps3-660x280.png)
 
+This image illistrates how the locally weighted regression is optimized with tau, or bandwith. When tau is too large or too small, the regression is voerfitting or underfitting the training data. (1)
 
 ## References
 
-https://www.geeksforgeeks.org/locally-weighted-linear-regression-using-python/
+1. https://www.geeksforgeeks.org/locally-weighted-linear-regression-using-python/
