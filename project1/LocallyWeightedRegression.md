@@ -11,3 +11,8 @@ $$ dist(\vec{v},\vec{w})=\sqrt{(v_1-w_1)^2+(v_2-w_2)^2+...(v_p-w_p)^2}$$
 We shall have $n$ different weight vectors because we have $n$ different observations.
 
 ![\label{fig:locregression}](/project1/ps3-660x280.png)
+
+
+## References
+
+https://www.geeksforgeeks.org/locally-weighted-linear-regression-using-python/
