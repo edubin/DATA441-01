@@ -29,26 +29,36 @@ $$ K(x):= e^{-\frac{\|x\|^2}{2}}$$
 2.   The Tricubic Kernel
 
 $$ K(x):=\begin{cases}
-  (1-\|x\|^3)^3   if   \|x\|<1 \\
-0 \;\;\; \text{otherwise}
+  (1-\|x\|^3)^3&if&\|x\|<1 \\
+0 & \text{otherwise}
 \end{cases}
 $$
 
 3.   The Epanechnikov Kernel (name of the person who found it, proved to be very efficient)
 
 $$ K(x):=\begin{cases}
-\frac{3}{4}(1-\|x\|^2)  if   \|x\|<1 \\
-0 \;\;\; \text{otherwise}
+\frac{3}{4}(1-\|x\|^2)&if&\|x\|<1 \\
+0 & \text{otherwise}
 \end{cases}
 $$
 
 3.   The Quartic Kernel
 
 $$ K(x):=\begin{cases}
-\frac{15}{16}(1-\|x\|^2)^2  if   \|x\|<1 \\
-0 \;\;\; \text{otherwise}
+\frac{15}{16}(1-\|x\|^2)^2 &if&\|x\|<1 \\
+0 &\text{otherwise}
 \end{cases}
 $$
+
+## Lowess Function
+
+The lowess function fits a nonparametric regression curve to a scatterplot.
+The arrays x and y contain an equal number of elements; each pair
+(x[i], y[i]) defines a data point in the scatterplot. The function returns
+the estimated (smooth) values of y.
+The smoothing span is given by f. A larger value for f will result in a
+smoother curve. The number of robustifying iterations is given by iter. The
+function will run faster with a smaller number of iterations.
 
 ## References
 
